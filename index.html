@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustMielzAndGar Datapack Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Documentation du Datapack JustMielzAndGar</h1>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Ce datapack ajoute des recettes personnalisées ainsi que des effets spécifiques liés à des consommables comme de la drogue et des alcools dans Minecraft. Il fonctionne avec la version la plus récente du jeu.</p>
+        </section>
+
+        <section id="installation">
+            <h2>Installation</h2>
+            <ol>
+                <li>Téléchargez le dossier du datapack.</li>
+                <li>Placez-le dans le répertoire suivant : <code>saves/<nom_de_votre_monde>/datapacks/</code>.</li>
+                <li>Lancez Minecraft et chargez votre monde.</li>
+                <li>Entrez la commande <code>/reload</code> pour activer le datapack.</li>
+            </ol>
+        </section>
+
+        <section id="structure">
+            <h2>Structure du Datapack</h2>
+            <p>Voici la structure des fichiers et dossiers :</p>
+            <pre>
+justmielzandgar/
+├── pack.mcmeta
+├── data/
+│   ├── minecraft/
+│   │   └── tags/
+│   │       └── functions/
+│   │           ├── load.json
+│   │           └── tick.json
+│   └── justmielzandgar/
+│       ├── functions/
+│       │   ├── drink_effects.mcfunction
+│       │   ├── tick.mcfunction
+│       │   └── load.mcfunction
+│       ├── recipes/
+│       │   ├── beer_white.json
+│       │   ├── punch.json
+│       │   └── drug.json
+            </pre>
+        </section>
+
+        <section id="recettes">
+            <h2>Recettes</h2>
+            <h3>Bière Blanche</h3>
+            <pre>
+Pattern :
+ B 
+WHW
+ B 
+
+B = Wheat (blé)
+W = Water Bucket (seau d'eau)
+H = Glass Bottle (bouteille en verre)
+            </pre>
+
+            <h3>Punch</h3>
+            <pre>
+Pattern :
+ F 
+SHS
+ F 
+
+F = Sugar (sucre)
+S = Sweet Berries (baies sucrées)
+H = Glass Bottle (bouteille en verre)
+            </pre>
+
+            <h3>Drogue</h3>
+            <pre>
+Pattern :
+SSS
+SBS
+SSS
+
+S = Sugar (sucre)
+B = Glass Bottle (bouteille en verre)
+            </pre>
+        </section>
+
+        <section id="effets">
+            <h2>Effets des Consommables</h2>
+            <ul>
+                <li><strong>Bière Blanche</strong> : Faiblesse 1, Résistance 1.</li>
+                <li><strong>Punch</strong> : Force 2, Poison.</li>
+                <li><strong>Drogue</strong> : Nausée, Faiblesse 2, Vision nocturne, Résistance 1.</li>
+            </ul>
+        </section>
+
+        <section id="debugging">
+            <h2>Debugging</h2>
+            <p>Pour vérifier si le datapack fonctionne :</p>
+            <ul>
+                <li>Vérifiez dans le chat si le message suivant s'affiche : <code>[Justmielzandgar] Le datapack fonctionne correctement !</code>.</li>
+                <li>Utilisez la commande <code>/datapack list</code> pour voir si le datapack est activé.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 JustMielzAndGar. Hébergé avec GitHub Pages.</p>
+    </footer>
+</body>
+</html>
