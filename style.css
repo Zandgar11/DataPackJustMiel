@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -8,22 +8,37 @@ body {
 }
 
 header {
-    background: #333;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
 main {
-    padding: 20px;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
-    color: #444;
+h2 {
+    color: #ff7e5f;
+    border-bottom: 2px solid #feb47b;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 code {
@@ -35,22 +50,25 @@ code {
 
 pre {
     background: #eee;
-    padding: 10px;
-    border-left: 4px solid #444;
+    padding: 15px;
+    border-left: 4px solid #ff7e5f;
     overflow-x: auto;
+    border-radius: 5px;
 }
 
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     margin-top: 20px;
+    font-size: 0.9em;
 }
 
 a {
-    color: #0066cc;
+    color: #ff7e5f;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
@@ -59,23 +77,30 @@ a:hover {
 
 ul {
     padding-left: 20px;
+    list-style: circle;
 }
 
 li {
     margin-bottom: 10px;
 }
 
-header h1 {
-    font-size: 2em;
-    margin: 0;
-}
-
 section h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
+    font-size: 1.8em;
     margin-bottom: 15px;
 }
 
 footer p {
     font-size: 0.9em;
 }
+
+/* Animation pour les liens */
+a {
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #feb47b;
+}
+
+/* Ajout de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
