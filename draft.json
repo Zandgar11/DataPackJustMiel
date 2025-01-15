@@ -1,0 +1,56 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "minecraft:sugar"
+    ],
+    [
+      "minecraft:sweet_berries"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:sugar",
+    "components": {
+      "minecraft:consumable": {
+        "animation": "eat",
+        "sound": "minecraft:block.sweet_berry_bush.pick_berries",
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:nausea",
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:resistance",
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:night_vision",
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:weakness",
+                "amplifier": 1,
+                "duration": 15,
+                "show_particles": true,
+                "show_icon": true
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:custom_name": "\"Drogue\"",
+      "minecraft:food": {
+        "nutrition": 0,
+        "saturation": 0,
+        "can_always_eat": true
+      }
+    }
+  }
+}
