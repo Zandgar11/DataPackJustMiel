@@ -1,0 +1,69 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "minecraft:sugar"
+    ],
+    [
+      "minecraft:sweet_berries"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:sugar",
+    "components": {
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation": 1,
+        "can_always_eat": true
+      },
+      "minecraft:custom_name": "\"Drogue\"",
+      "minecraft:consumable": {
+        "consume_seconds": 2,
+        "animation": "eat",
+        "sound": "minecraft:block.amethyst_block.resonate",
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:night_vision",
+                "amplifier": 1,
+                "duration": 1000,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:weakness",
+                "amplifier": 1,
+                "duration": 1000,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:nausea",
+                "amplifier": 0,
+                "duration": 1000,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:resistance",
+                "amplifier": 0,
+                "duration": 1000,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              }
+            ],
+            "probability": 1
+          }
+        ]
+      }
+    },
+    "count": 1
+  }
+}

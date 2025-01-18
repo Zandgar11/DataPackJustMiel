@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "minecraft:potion",
+      "minecraft:water_bucket"
+    ],
+    [
+      "minecraft:nether_wart"
+    ]
+  ],
+  "result": {
+    "id": "minecraft:potion",
+    "components": {
+      "minecraft:custom_name": "\"cognac\"",
+      "minecraft:consumable": {
+        "consume_seconds": 2,
+        "animation": "drink",
+        "sound": "minecraft:entity.wandering_trader.drink_potion",
+        "has_consume_particles": true,
+        "on_consume_effects": [
+          {
+            "type": "minecraft:apply_effects",
+            "effects": [
+              {
+                "id": "minecraft:darkness",  
+                "amplifier": 1,
+                "duration": 500,              
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:strength",
+                "amplifier": 1,
+                "duration": 500,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:nausea",
+                "amplifier": 1,
+                "duration": 500,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              },
+              {
+                "id": "minecraft:slowness",
+                "amplifier": 1,
+                "duration": 500,
+                "ambient": true,
+                "show_particles": true,
+                "show_icon": true
+              }
+            ],
+            "probability": 1
+          }
+        ]
+      }
+    },
+    "count": 1
+  }
+}

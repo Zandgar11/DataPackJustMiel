@@ -1,0 +1,1 @@
+tellraw @a[tag=admin] {"text":"Datapack chargé ! V1.0.","color":"green"}
