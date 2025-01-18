@@ -13,7 +13,7 @@ Ce datapack ajoute des recettes personnalisées ainsi que des effets spécifique
 
 Voici la structure des fichiers et dossiers du datapack :
 
-justmielzandgar/ ├── pack.mcmeta ├── data/ │ ├── minecraft/ │ │ └── tags/ │ │ └── functions/ │ │ ├── load.json │ │ └── tick.json │ └── justmielzandgar/ │ ├── functions/ │ │ ├── drink_effects.mcfunction │ │ ├── tick.mcfunction │ │ └── load.mcfunction │ ├── recipes/ │ │ ├── beer_white.json │ │ ├── punch.json │ │ └── drug.json
+justmielzandgar/ ├── pack.mcmeta ├── data/ │ ├── minecraft/ │ │ └── tags/ │ │ └── function/ │ │ ├── load.json │ │ └── tick.json │ └── justmielzandgar/ │ ├── function/ │  ├── loop.mcfunction │ │ └── load.mcfunction │ ├── recipe/ │ │ ├── biere_blanche.json │ │ ├── punch.json │ │ └── drugs.json
 
 shell
 Copier le code
