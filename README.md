@@ -1,3 +1,5 @@
+#Ce README n'est plus à jour - 20/01
+
 # Datapack JustMielzAndGar
 
 Ce datapack ajoute des recettes personnalisées ainsi que des effets spécifiques liés à des consommables comme de la drogue et des alcools dans Minecraft. Il est compatible avec la dernière version du jeu.
